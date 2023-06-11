@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+</head>
+<body>
+   <div class="body-wraper">
+    <header class="header_fix">
+        <div class="wrapper">
+           
+            <a href="#" class="header__logo">
+            <div class="businka">
+            businka.jwlr    
+            </div> </a>
+               
+            <batton id="nav-btn" class="nav-button"> <img src="phot/menu.png" alt=""></batton>
+               
+            <nav id="nav" class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a class="header__link" href="#i">О нас</a> </li>
+                        <li class="header__item"><a class="header__link" href="#new">Изделия</a></li>
+                        <li class="header__item"><a class="header__link" href="#shop">Заказ</a></li>
+                        <li class="header__item"><a class="header__link" href="#c">Контакты</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="conteiner">
+        <main class="main">
+            <div class="main_item">
+                <h1 class="main_title">Украшения ручной&nbspработы</h1>
+                <p class="main_text">Изделия из бисера. Индивидуальный подход к&nbspкаждому клиенту.</p>
+                <a href="#shop" class="link"> Сделать расчет и заказ</a>
+            </div>
+            <div class="main_images">
+                <svg  class="img_big">
+                    <pattern id="pattern" width="100%" height="100%">
+                       <image xlink:href="phot/main.jpg" class="main_img--big" preserveAspectRatio="xMidYMin slice"></image>
+                    </pattern>
+                    <path d="M0 0H203C285.843 0 353 67.1573 353 150V482H180.5C80.8126 482 0 401.187 0 301.5V0Z"  fill="url(#pattern)">
+                 </svg>
+                <svg class="img_small">
+                    <pattern id="pattern1" width="100%" height="100%">
+                       <image xlink:href="phot/main-min.jpg" class="main_img--small" width="244" height="279" preserveAspectRatio="xMidYMin slice"></image>
+                    </pattern>
+                    <path d="M0 0H52.1473C157.91 0 243.647 85.7375 243.647 191.5V279H0V0Z"  fill="url(#pattern1)">
+                 </svg>
+            </div>
+        </main>
+     
+    </div>
+    <div class="info" >
+        <section class="section_conteiner" id="i">
+            <div class="conteiner_sec">
+                <div class="grid">
+                    <div class="grid_cover">
+                        <img src="phot/grid/chovenph-40 1.jpg" class="img_grid" alt="">
+                    </div>
+                    <div class="grid_cover">
+                        <img src="phot/grid/chovenph-40 2.jpg" class="img_grid" alt="">
+                    </div>
+                    <div class="grid_cover">
+                        <img src="phot/grid/chovenph-40 3.jpg" class="img_grid" alt="">
+                    </div>
+                    <div class="grid_cover">
+                        <img src="phot/grid/chovenph-40 4.jpg" class="img_grid" alt="">
+                    </div>
+                </div>
+                <div class="section_item">
+                    <h2 class="section_title">О нас...</h2>
+                    <p class="section_text"> Все украшения выполняются
+                        индивидуально по вашим пожеланиям! Можно выбрать цвет бисера и бусин, либо вдохновиться, посмотрев готовые изделия. 
+                        Время&nbspизготовления&nbsp1-3&nbspдня. </p>
+                    <p class="section_text2"> Сделано с любовью! </p>
+                </div>
+            </div>
+        </section>
+    </div > 
+    <div class="new_call" id="new" >
+        <div class="new_call_title" >
+            Новая коллекция 
+        </div>
+            <div id="Scrr" class="Scrrr">
+                <div class="Scr">
+                    <img src="phot/PHOTO/1.png" id="fotoM" alt="Диафильм" class="phot_call">
+                </div>
+                <div class="call_novig">
+                    <img class="button" src="phot/PHOTO/LeftButton.png" onClick="leftbut()"
+                    alt="Предыдущее фото">
+                    <img src="phot/PHOTO/1.png" id="fotoL" onClick="fotoClick(1)" alt="Фото">
+                    <img src="phot/PHOTO/2.png" id="fotoC" onClick="fotoClick(2)" alt="Фото">
+                    <img src="phot/PHOTO/3.png" id="fotoR" onClick="fotoClick(3)" alt="Фото">
+                    <img class="button" src="phot/PHOTO/RightButton.png" onClick="rightbut()"
+                    alt="Следующее фото">
+                    </div>
+            </div>
+    </div>
+    <div class="bacgr_cost" id="shop">
+    <div class="cost">
+        <div class="cost_title">
+            <svg class="circle" widtg="200" height="200" viewBox="0 0 200 200">
+                <path id="circleShape" class="circle_shape"  d="M 20, 100 a 80, 80 0 1, 1 160, 0 a 80, 80 0 1, 1 -160,0 " fill="none"> </path>
+                <path class="circle_arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" stroke="#290F00" stroke-width="2"> </path>
+                <text class="circle_text">
+                    <textPath href="#circleShape">
+                        Рассчитать стоимость
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <div class="cost_colc">
+            <form class="form">
+            <p class="form_text"> Выберите изделие:</p>
+                <select class="form_select" id="selectProduct">
+                    <option value="0" selected disabled> Выбрать из списка</option>
+                    <option value="350">Браслет (350р)</option>
+                    <option value="500"> Ожерелье  (500р)</option>
+                    <option value="100"> Кольцо (100р) </option>
+                </select>
+                <p class="form_text">Укажите количество:</p>
+                <input id="quantityProduct" class="form_input" type="number" value="0" min="0">
+                <button type="button" class="link" id="btnProduct">Рассчитать</button>
+            </form>
+            <div id="infoProduct" class="total" style="display:none;">
+                <p class="total_price">Итог: <span id="priceProduct"></span> p</p>
+                <p class="total_info">Оставьте заявку по почте: <a href="mailto: litovka01@mail.ru" class="total_email"> litovka01@mail.ru </a></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer_call">
+        <div class="call_wrapper">
+            <div class="call_title" id="c">
+                КОНТАКТЫ:
+            </div>
+            <div class="contact_conteiner">
+                <div class="contact-logo">
+                    <img src="phot/footer/logo.png" class="img_cont"></img>
+                    <p class="contact">
+                        businka.jwlr
+                    </p>
+                </div>
+                <div>
+                    <img src="phot/footer/tel.png" class="img_cont"></img>
+                    <p class="contact">
+                        +7 (903) 451-54-65
+                    </p>
+                </div>
+                <div>
+                    <img src="phot/footer/vk.png" class="img_cont"></img>
+                    <p class="contact">
+                        https://vk.com/businka.jwlr
+                    </p>
+                </div>
+                <div>
+                    <img src="phot/footer/inst.png" class="img_cont"></img>
+                    <p class="contact"> 
+                        @businka.jwlr
+                    </p>
+                </div>
+            </div>
+            <div class="Russia">
+                Доставка по всей России
+            </div>
+            <div class="follow">
+                следи за нами<br>
+                в инстаграм, вконтакте
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+   </div>
+</body>
+</html>
